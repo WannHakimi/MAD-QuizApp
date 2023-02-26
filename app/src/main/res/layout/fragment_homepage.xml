@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".homepage">
+
+
+
+    <Button
+        android:id="@+id/leader"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Leaderboard"
+        android:drawableLeft="@drawable/leader"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/round_corner"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/round_corner"
+        android:fontFamily="@font/poppins"
+        android:text="Choose Subject"
+        android:drawableLeft="@drawable/subject"
+        android:textColor="#FFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="440dp"
+        android:layout_height="65dp"
+        android:src="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leader"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIFFICULTY"
+        android:fontFamily="@font/poppins"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <CheckBox
+        android:id="@+id/easy"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:button="@null"
+        android:drawableStart="@drawable/checkbox"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="EASY"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <CheckBox
+        android:id="@+id/hard"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="184dp"
+
+        android:backgroundTint="#ffff"
+        android:button="@null"
+        android:drawableStart="@drawable/checkbox"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="HARD"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="199dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="40dp"
+        android:text="PROFILE"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/round_corner"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hard"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <Button
+        android:id="@+id/hist"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:text="HISTORY"
+        android:drawableLeft="@drawable/history"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/round_corner"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leader"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="83dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="403dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
+        android:src="@drawable/male"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/difficult"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/easy"
+        app:layout_constraintBottom_toBottomOf="@+id/easy"
+        app:layout_constraintEnd_toEndOf="@+id/easy"
+        app:layout_constraintTop_toTopOf="@+id/easy" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hard"
+        app:layout_constraintEnd_toEndOf="@+id/hard"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+    <ImageButton
+        android:id="@+id/faq"
+        android:layout_width="64dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/faq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

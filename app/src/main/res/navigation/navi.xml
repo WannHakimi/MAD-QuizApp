@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.quizapplication.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login_to_adminmenu"
+            app:destination="@id/adminmenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.quizapplication.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.quizapplication.homepage"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepage_to_profile2"
+            app:destination="@id/profile2" />
+        <action
+            android:id="@+id/action_homepage_to_choosesub"
+            app:destination="@id/choosesub" />
+        <action
+            android:id="@+id/action_homepage_to_leaderboard"
+            app:destination="@id/leaderboard" />
+        <action
+            android:id="@+id/action_homepage_to_historypage"
+            app:destination="@id/historypage" />
+        <action
+            android:id="@+id/action_homepage_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_homepage_to_faq2"
+            app:destination="@id/faq2" />
+        <action
+            android:id="@+id/action_homepage_to_rating"
+            app:destination="@id/rating" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.example.quizapplication.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile2_to_editprof"
+            app:destination="@id/editprof" />
+        <action
+            android:id="@+id/action_profile2_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_profile2_to_adminmenu"
+            app:destination="@id/adminmenu" />
+        <action
+            android:id="@+id/action_profile2_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/editprof"
+        android:name="com.example.quizapplication.editprof"
+        android:label="fragment_editprof"
+        tools:layout="@layout/fragment_editprof" >
+        <action
+            android:id="@+id/action_editprof_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosesub"
+        android:name="com.example.quizapplication.choosesub"
+        android:label="fragment_choosesub"
+        tools:layout="@layout/fragment_choosesub" >
+        <action
+            android:id="@+id/action_choosesub_to_quiz"
+            app:destination="@id/quiz" />
+        <action
+            android:id="@+id/action_choosesub_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz"
+        android:name="com.example.quizapplication.quiz"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quiz_to_afterquiz"
+            app:destination="@id/afterquiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderboard"
+        android:name="com.example.quizapplication.leaderboard"
+        android:label="fragment_leaderboard"
+        tools:layout="@layout/fragment_leaderboard" >
+        <action
+            android:id="@+id/action_leaderboard_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_leaderboard_to_adminmenu"
+            app:destination="@id/adminmenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/historypage"
+        android:name="com.example.quizapplication.historypage"
+        android:label="fragment_historypage"
+        tools:layout="@layout/fragment_historypage" >
+        <action
+            android:id="@+id/action_historypage_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_historypage_to_quizhistory"
+            app:destination="@id/quizhistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizhistory"
+        android:name="com.example.quizapplication.quizhistory"
+        android:label="fragment_quizhistory"
+        tools:layout="@layout/fragment_quizhistory" >
+        <action
+            android:id="@+id/action_quizhistory_to_historypage"
+            app:destination="@id/historypage" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminmenu"
+        android:name="com.example.quizapplication.adminmenu"
+        android:label="fragment_adminmenu"
+        tools:layout="@layout/fragment_adminmenu" >
+        <action
+            android:id="@+id/action_adminmenu_to_profile2"
+            app:destination="@id/profile2" />
+        <action
+            android:id="@+id/action_adminmenu_to_addquestion"
+            app:destination="@id/addquestion" />
+        <action
+            android:id="@+id/action_adminmenu_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_adminmenu_to_chooseeditndelete"
+            app:destination="@id/chooseeditndelete" />
+        <action
+            android:id="@+id/action_adminmenu_to_deletechoose"
+            app:destination="@id/deletechoose" />
+        <action
+            android:id="@+id/action_adminmenu_to_leaderboard"
+            app:destination="@id/leaderboard" />
+        <action
+            android:id="@+id/action_adminmenu_to_profile22"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addquestion"
+        android:name="com.example.quizapplication.addquestion"
+        android:label="fragment_addquestion"
+        tools:layout="@layout/fragment_addquestion" >
+        <action
+            android:id="@+id/action_addquestion_to_adminmenu"
+            app:destination="@id/adminmenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseeditndelete"
+        android:name="com.example.quizapplication.chooseeditndelete"
+        android:label="fragment_chooseeditndelete"
+        tools:layout="@layout/fragment_chooseeditndelete" >
+        <action
+            android:id="@+id/action_chooseeditndelete_to_adminmenu"
+            app:destination="@id/adminmenu" />
+        <action
+            android:id="@+id/action_chooseeditndelete_to_editndelpage"
+            app:destination="@id/editndelpage" />
+    </fragment>
+    <fragment
+        android:id="@+id/editquestion"
+        android:name="com.example.quizapplication.editquestion"
+        android:label="fragment_editquestion"
+        tools:layout="@layout/fragment_editquestion" >
+        <action
+            android:id="@+id/action_editquestion_to_adminmenu"
+            app:destination="@id/adminmenu" />
+        <action
+            android:id="@+id/action_editquestion_to_editndelpage2"
+            app:destination="@id/editndelpage" />
+    </fragment>
+    <fragment
+        android:id="@+id/editndelpage"
+        android:name="com.example.quizapplication.editndelpage"
+        android:label="fragment_editndelpage"
+        tools:layout="@layout/fragment_editndelpage" >
+        <action
+            android:id="@+id/action_editndelpage_to_adminmenu"
+            app:destination="@id/adminmenu" />
+        <action
+            android:id="@+id/action_editndelpage_to_editquestion"
+            app:destination="@id/editquestion" />
+    </fragment>
+    <fragment
+        android:id="@+id/deletequestion"
+        android:name="com.example.quizapplication.deletequestion"
+        android:label="fragment_deletequestion"
+        tools:layout="@layout/fragment_deletequestion" >
+        <action
+            android:id="@+id/action_deletequestion_to_deletechoose2"
+            app:destination="@id/deletechoose" />
+        <action
+            android:id="@+id/action_deletequestion_to_adminmenu2"
+            app:destination="@id/adminmenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/deletechoose"
+        android:name="com.example.quizapplication.deletechoose"
+        android:label="fragment_deletechoose"
+        tools:layout="@layout/fragment_deletechoose" >
+        <action
+            android:id="@+id/action_deletechoose_to_adminmenu"
+            app:destination="@id/adminmenu" />
+        <action
+            android:id="@+id/action_deletechoose_to_deletequestion"
+            app:destination="@id/deletequestion" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterquiz"
+        android:name="com.example.quizapplication.afterquiz"
+        android:label="fragment_afterquiz"
+        tools:layout="@layout/fragment_afterquiz" >
+        <action
+            android:id="@+id/action_afterquiz_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_afterquiz_to_certificate"
+            app:destination="@id/certificate" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificate"
+        android:name="com.example.quizapplication.certificate"
+        android:label="fragment_certificate"
+        tools:layout="@layout/fragment_certificate" >
+        <action
+            android:id="@+id/action_certificate_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/faq2"
+        android:name="com.example.quizapplication.faq"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" >
+        <action
+            android:id="@+id/action_faq2_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/rating"
+        android:name="com.example.quizapplication.rating"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" >
+        <action
+            android:id="@+id/action_rating_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+</navigation>
